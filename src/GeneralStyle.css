@@ -5,57 +5,141 @@
     list-style: none;
 }
 
-body {
-    background-color: lightgray;
+:root {
+    --main-blue-color: #63B2FF;
+    --main-black-color: #353535;
+    --main-white-color: #F4F3EE;
 }
 
+body {
+    background-color: var(--main-white-color);
+    color: var(--main-black-color);
+    min-height: 100vh;
+    position: relative;
+}
 
 a {
     text-decoration: inherit
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+/* ================= HEADER STYLE ================ */
 
-.header {
+header {
     width: 100%;
     height: auto;
     text-align: center;
+    background-color: var(--main-blue-color);
 }
 
 .inner_header {
     height:auto;
 }
 
-.inner_header h1 {
-    font-family: Verdana;
-    font-weight: 100;
-    font-size: 60px;
-}
+    .inner_header h1 {
+        font-family: Verdana;
+        font-weight: 100;
+        font-size: 60px;
+        color: var(--main-black-color);
+    }
 
-.navigationMenu {
-    background-color: #1DA1F2;
+.navigation_menu {
+    background-color: var(--main-black-color);
     height: 50px;
     width: 75%;
     display: table;
+    table-layout: fixed;
+    width: 1000px;
+    overflow: hidden;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.NavigationButton {
+.navigation_button {
     display: table-cell;
-    color: #FFFFFF;
-    background-color: #1DA1F2;
+    color: var(--main-white-color);
+    background-color: var(--main-black-color);
     font-family: Verdana;
     font-weight: 100;
-    font-size: 33px;
-    border: solid 3px #1DA1F2;
+    font-size: 27px;
+    border: solid 3px #353535;
     vertical-align: middle;
 }
 
-.NavigationButton:hover {
-    background-color: #0078D7;
+    .navigation_button:hover {
+        background-color: var(--main-white-color);
+        color: var(--main-black-color);
+    }
+
+
+/* ================= MAIN STYLE ================ */
+
+
+main {
+    width: 55%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    font-family: Verdana;
+}
+
+main h2
+{
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+    main h3 {
+        color: var(--main-black-color);
+    }
+
+main a {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+main image
+{
+    margin-top: 50px;
+}
+
+main p
+{
+    text-align: left;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* ================= FOOTER STYLE ================ */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: var(--main-blue-color);
+    vertical-align: middle;
+    text-align: center;
+    overflow: hidden;
+}
+
+.footer_inner_table {
+    width: 55%;
+    height: 90%;
+    display: table;
+    table-layout: fixed;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.footer_inner_table_cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.footer_logo {
+    height: 40px;
+    margin-right: 20px;
 }
