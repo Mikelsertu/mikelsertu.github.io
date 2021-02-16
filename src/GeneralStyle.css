@@ -45,10 +45,9 @@ header {
 .navigation_menu {
     background-color: var(--main-black-color);
     height: 50px;
-    width: 75%;
     display: table;
     table-layout: fixed;
-    width: 1000px;
+    width: 800px;
     overflow: hidden;
     margin-top: 20px;
     margin-left: auto;
@@ -81,6 +80,7 @@ main {
     text-align: center;
     margin: auto;
     font-family: Verdana;
+    overflow: hidden;
 }
 
     main h2{
@@ -90,7 +90,7 @@ main {
     
     main h3 {
         color: var(--main-black-color);
-        text-align: left;
+        text-align: center;
         margin-top: 50px;
     }
 
@@ -107,6 +107,7 @@ main {
         text-align: left;
         font-size: 20px;
         margin-top: 20px;
+        line-height: 1.5;
     }
 
 /* ================= FOOTER STYLE ================ */
@@ -169,6 +170,7 @@ footer {
     .game_table_cell h3 {
         margin: auto 20px 15px 20px;
         font-size: 26px;
+        text-align: left;
     }
     .game_table_cell h4 {
         margin: auto 20px 14px 20px;
@@ -198,6 +200,61 @@ footer {
 }
 
     .game_read_more:hover {
+        background-color: var(--main-white-color);
+        color: var(--main-black-color);
+    }
+
+
+/*============== GAME PAGES =================*/
+
+.game_page_title
+{
+    text-align: center;
+    margin-top: 20px;
+    width: 400px;
+}
+
+.game_page_trailer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.game_page_lists {
+    text-align: left;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+    .game_page_lists li {
+        margin-bottom: 15px;
+    }
+
+        .game_page_lists li::before {
+            content: '\2022';
+            color: var(--main-black-color);
+            margin-right: 10px;
+        }
+
+
+main .game_download_button{
+    text-align:center;
+}
+
+.game_download_button {
+    display: block;
+    color: var(--main-white-color);
+    background-color: var(--main-black-color);
+    font-family: Verdana;
+    font-weight: 100;
+    font-size: 27px;
+    border: solid 3px #353535;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+
+    .game_download_button:hover {
         background-color: var(--main-white-color);
         color: var(--main-black-color);
     }
